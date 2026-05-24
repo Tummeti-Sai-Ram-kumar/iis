@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  background: #00458F;
+}
+
+.footer__left {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 30px;
+  gap: 10px;
+}
+
+.footer__newsLetterTitle,
+.footer__followUsTitle,
+.footer__copyright {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__newsLetterInputContainer {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  align-items: center;
+}
+
+.footer__newsLetterInput {
+  width: 100%;
+  padding: 20px 30px;
+  border: none;
+  outline: none;
+}
+
+.footer__newsLetterButton {
+  display: inline-flex;
+  padding: 20px 30px;
+  border: none;
+  background: #FFF;
+  color: #000;
+  cursor: pointer;
+}
+
+.footer__newsLetterButton:hover {
+  color: #00458F;
+}
+
+.footer__quickLinks {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__quickLink {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  fill: white;
+}
+
+.footer__quickLink:hover {
+  animation: spin 1s linear;
+}
+
+.footer__banner {
+  width: 100%;
+  background: url('https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/1.webp') no-repeat center / cover;
+}
+
+@media (max-width: 900px) and (orientation: portrait),
+  (max-width: 600px) and (orientation: landscape) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer__left {
+    align-items: center;
+  }
+
+  .footer__newsLetterTitle,
+  .footer__followUsTitle,
+  .footer__copyright {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait),
+  (max-width: 768px) and (orientation: landscape) {
+  .footer__left {
+    margin: 20px auto;
+    gap: 5px;
+  }
+
+  .footer__newsLetterTitle,
+  .footer__followUsTitle,
+  .footer__copyright {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .footer__newsLetterInputContainer {
+    font-size: 20px;
+  }
+
+  .footer__newsLetterInput {
+    padding: 10px 15px;
+  }
+
+  .footer__newsLetterButton {
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .footer__quickLinks {
+    gap: 10px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
