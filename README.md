@@ -24,11 +24,11 @@ This project is designed to work across mobile and desktop screen sizes.
 
 ### Mobile view
 
-![Responsive Mobile View](public/readme-responsive-mobile.svg)
+![Responsive Mobile View](public//image-2.png)
 
 ### Desktop view
 
-![Responsive Desktop View](public/readme-responsive-desktop.svg)
+![Responsive Desktop View](public//image-1.jpeg)
 
 ### Project screenshots
 
