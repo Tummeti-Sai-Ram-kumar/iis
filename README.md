@@ -1,4 +1,4 @@
-# iis Shop UI
+# Modern E Commerce Platform
 
 A responsive sneaker shop UI built with **Vite**.
 
